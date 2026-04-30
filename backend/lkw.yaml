@@ -1,0 +1,9 @@
+name: shopping.api.ajmuht.eu
+type: app
+source: dist
+expose:
+  - service: app
+    expose:
+      - port: 8090
+        entrypoint: websecure
+        domain: laravel-example.ajmuht.eu

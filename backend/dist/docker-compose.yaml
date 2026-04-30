@@ -1,0 +1,5 @@
+services:
+  app:
+    image: ghcr.io/medvesek/shopping-list:latest
+    ports:
+      - 8090:8090
