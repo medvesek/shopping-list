@@ -10,7 +10,7 @@ type Item = {
 export default class ApiService {
   http: HttpClient;
 
-  endpoint = 'http://localhost:8090';
+  endpoint = 'https://shopping.api.ajmuht.eu';
 
   constructor(http: HttpClient) {
     this.http = http;
