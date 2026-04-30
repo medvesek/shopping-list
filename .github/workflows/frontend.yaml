@@ -23,6 +23,7 @@ jobs:
           node-version: "24"
 
       - name: Build
+        working-directory: frontend
         run: |
           npm install
           npm run build
@@ -34,3 +35,4 @@ jobs:
           server-ip: ${{ secrets.AQUILA_IP }}
           ssh-user: ${{ secrets.SSH_USER }}
           ssh-private-key: ${{ secrets.SSH_KEY_PRIVATE_GITHUB_ACTIONS }}
+          config: frontend/lkw.yaml
