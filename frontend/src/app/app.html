@@ -1,0 +1,15 @@
+@for (item of form; track $index) {
+  <div class="item">
+    <input [formField]="item.check" type="checkbox" tabindex="-1" (change)="save()" />
+    <input
+      #input
+      type="text"
+      [formField]="item.text"
+      (keydown.enter)="onEnter($index)"
+      (keydown.arrowup)="onUp($index)"
+      (keydown.arrowdown)="onDown($index)"
+      (keydown.backspace)="onBackspace($index)"
+      (keydown)="save()"
+    />
+  </div>
+}
