@@ -1,4 +1,5 @@
 name: Deploy frontend
+run-name: Deploy frontend
 
 on:
   workflow_dispatch:
