@@ -6,4 +6,4 @@ expose:
     expose:
       - port: 8090
         entrypoint: websecure
-        domain: laravel-example.ajmuht.eu
+        domain: shopping.api.ajmuht.eu
